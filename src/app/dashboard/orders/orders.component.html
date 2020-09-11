@@ -1,0 +1,21 @@
+<h3>My Orders</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th  scope="col">SI. No.</th>
+            <th  scope="col">Order List</th>
+            <th  scope="col">Order ID</th>
+            <th  scope="col">Address</th>
+            <th  scope="col">Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let order of orders; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{order.name}}</td>
+            <td>{{order.id}}</td>
+            <td>{{order.address}}</td>
+            <td>{{order.price}}</td>
+        </tr>
+    </tbody>
+</table>

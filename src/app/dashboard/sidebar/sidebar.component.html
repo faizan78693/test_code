@@ -1,0 +1,26 @@
+<nav>
+    <ul>
+        <li>
+            <a [href]="" routerLink="./welcome"  routerLinkActive="active">Home</a>
+        </li>
+        <li>
+            <a [href]="" routerLink="./products" routerLinkActive="active">Products</a>
+            <ul>
+                <ng-container *ngFor="let product of products">
+                    <li> {{product?.name}}</li>
+                </ng-container>
+            </ul>
+        </li>
+        <li>
+            <a [href]=""  routerLink="./orders"  routerLinkActive="active">My Orders</a>
+            <ul>
+                <ng-container *ngFor="let order of orders">
+                    <li> {{order?.name}}</li>
+                </ng-container>
+            </ul>
+        </li>
+        <li>
+            <a [href]=""  routerLink="">About</a>
+        </li>
+    </ul>
+</nav>

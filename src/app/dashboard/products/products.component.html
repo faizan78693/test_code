@@ -1,0 +1,16 @@
+<h3>Product List</h3>
+<ul class="d-flex flex-wrap">
+    <ng-container *ngFor="let product of products">
+        <li class="m-1">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <img src="https://fakeimg.pl/350/">
+                  <h5 class="card-title text-center">{{product.name}}</h5>
+                  <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, dolorum. Totam impedit, modi, repellendus voluptates architecto tempora eum in fugiat laboriosam molestiae soluta nostrum sint id dolores. Quos, nulla error.</p>
+                  <p class="text-center">{{product.price}}</p>
+                </div>
+              </div>
+        </li>
+    </ng-container>
+    
+</ul>

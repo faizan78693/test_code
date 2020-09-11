@@ -1,0 +1,12 @@
+:host {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+table{
+    width: 100%;
+}
+
+tbody tr:nth-child(even) {
+    background: #c2c2c2;
+}

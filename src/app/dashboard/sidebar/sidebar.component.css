@@ -1,0 +1,6 @@
+a + ul {
+    display: none;
+}
+a.active + ul {
+    display: block;
+}
